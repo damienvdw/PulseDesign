@@ -5,14 +5,19 @@ body{
     background: url(../img/background-pattern.jpg);
     color: white;
     font-size: 0.625em;
+    font-family: $brandon_r-font;
 }
 .pageBlock{
     width: 1028px;
     margin: 0 auto;
     position:  relative;
 }
+.logoBlock{
+    text-align: center;
+    padding: 3em 0;
+}
 .navBorder{
-    margin: 3em 0 0 0;
+    margin: 3em 0 3em 0;
     padding: 1em 0;    
     border: 1px dashed $border-dashed-color;
     border-left: none;

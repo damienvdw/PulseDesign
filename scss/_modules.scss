@@ -57,7 +57,45 @@
     &.vimeo:hover,&.vimeo:active{background-color: #67cef7;}
 }
 .socialNav--icon{
-    font-size: 1.5em;
+    font-size: 1.6em;
     position: relative;
-    top: 0.05em;
+    top: 0.1em;
+}
+
+.logoPulse{
+    width: 31em;
+    height: auto;
+    text-align: center;
+}
+.logoFollow{
+    position: relative;
+    top:-5em;
+}
+
+.text-smaller{
+    font-size: 0.8em;
+}
+
+.text-bigger{
+    font-size: 1.35em;
+}
+
+.text-light{
+    font-family: $brandon_t-font;
+}
+.text-bold{
+    font-family: $brandon_b-font;
+}
+
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+
+.text-lightGray{
+    color: $lightGray;
+}
+.text-gray{
+    color:$gray;
 }
