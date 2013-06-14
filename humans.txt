@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Cézar Monchablon     --  Designer  -- @PulseDesign 
+    Damien Van Der Windt -- Developper -- @damienvdw
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
