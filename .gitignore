@@ -1,6 +1,5 @@
 # Ignore Theses Files & Docs #
 .sass-cache/
-img/
 codekit-config.json
 config.rb
 apple-touch-icon-114x114-precomposed.png
