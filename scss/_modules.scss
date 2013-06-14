@@ -1,3 +1,63 @@
 /* =================================
 	MODULES
 ================================= */
+.mainNav{
+    font-family: $conqueror-font;
+    margin: 0;
+    padding: 0;
+}
+.mainNav--item{
+    font-size: 1.2em;
+    display: inline-block;
+    border-left: 1px dashed $border-dashed-color;
+    &:first-child{
+        border-left: none;
+    }
+}
+.mainNav--link{
+    padding: 1.25em 1.05em;
+    display: block;
+    min-width: 7.2em;
+    line-height: 0.8em;
+    @include boxSizingBorderBox;
+    text-align: center;
+    &:hover, &:active, &.active{
+        background: url(../img/mainNav-pattern.png);
+    }
+}
+
+.socialNav{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top:1.8em;
+}
+.socialNav--item{
+    display: inline-block;
+    font-size: 1em;
+    padding: 0 1.05em;
+    border-left: 1px dashed $border-dashed-color;
+    &:first-child{
+        border-left: none;
+    }
+}
+.socialNav--link{
+    @include border-radius(100px);
+    background-color: $circle-bg-grey;
+    display: block;
+    width: 2.4em;
+    height: 2.4em;
+    text-align: center;
+    &.facebook:hover,&.facebook:active{background-color: #04427b;}
+    &.instagram:hover,&.instagram:active{background-color: #2a94be;}
+    &.linkedin:hover,&.linkedin:active{background-color: #21769b;}
+    &.twitter:hover,&.twitter:active{background-color: #36b9e7;}
+    &.behance:hover,&.behance:active{background-color: #055d85;}
+    &.vimeo:hover,&.vimeo:active{background-color: #67cef7;}
+}
+.socialNav--icon{
+    font-size: 1.5em;
+    position: relative;
+    top: 0.05em;
+}
