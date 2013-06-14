@@ -316,7 +316,7 @@ a { color: white; text-decoration: none; }
 .logoPulse { width: 31em; height: auto; text-align: center; }
 
 /* line 70, ../scss/_modules.scss */
-.logoFollow { position: relative; top: -5em; }
+.logoFollow { position: relative; top: -3em; }
 
 /* line 75, ../scss/_modules.scss */
 .text-smaller { font-size: 0.8em; }
