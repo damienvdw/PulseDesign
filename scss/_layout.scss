@@ -23,6 +23,23 @@ body{
     border-left: none;
     border-right: none;
 }
+.col-container{
+    @include clearfix;
+}
+.col-third{
+    width: 32%;
+    margin-left:2%;
+    float: left;
+    &:first-child{
+        margin-left:0%;
+    }
+}
+.col-bordered{
+    border: 1px solid $lightGray;
+    border-top: none;
+    border-bottom: none;
+    @include boxSizingBorderBox;
+}
 .ruler50{
     @include boxSizingBorderBox;
     width: 50%;

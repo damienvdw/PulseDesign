@@ -261,7 +261,22 @@ body { background: url(../img/background-pattern.jpg); color: white; font-size: 
 /* line 19, ../scss/_layout.scss */
 .navBorder { margin: 3em 0 3em 0; padding: 1em 0; border: 1px dashed #414042; border-left: none; border-right: none; }
 
-/* line 26, ../scss/_layout.scss */
+/* line 14, ../scss/_mixins.scss */
+.col-container { *zoom: 1; }
+/* line 18, ../scss/_mixins.scss */
+.col-container:before, .col-container:after { content: ""; display: table; }
+/* line 22, ../scss/_mixins.scss */
+.col-container:after { clear: both; }
+
+/* line 29, ../scss/_layout.scss */
+.col-third { width: 32%; margin-left: 2%; float: left; }
+/* line 33, ../scss/_layout.scss */
+.col-third:first-child { margin-left: 0%; }
+
+/* line 37, ../scss/_layout.scss */
+.col-bordered { border: 1px solid #5e5e5e; border-top: none; border-bottom: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 43, ../scss/_layout.scss */
 .ruler50 { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50%; position: absolute; top: 0; left: 0; height: 100%; border-right: 1px solid red; opacity: 0.2; }
 
 /* =================================
@@ -269,6 +284,18 @@ body { background: url(../img/background-pattern.jpg); color: white; font-size: 
 ================================= */
 /* line 4, ../scss/_elements.scss */
 a { color: white; text-decoration: none; }
+
+/* line 8, ../scss/_elements.scss */
+p { color: #5e5e5e; font-size: 1.25em; line-height: 1.25em; margin: 1.25em 0; }
+
+/* line 14, ../scss/_elements.scss */
+hr { margin: -0.5em 0 0.2em 0; border-color: #bbbbbb; }
+
+/* line 18, ../scss/_elements.scss */
+input, textarea { background: none; border: none; color: #5e5e5e; font-size: 1.35em; width: 100%; outline: none; }
+
+/* line 27, ../scss/_elements.scss */
+textarea { resize: none; }
 
 /* =================================
 	MODULES
@@ -319,22 +346,56 @@ a { color: white; text-decoration: none; }
 .logoFollow { position: relative; top: -3em; }
 
 /* line 75, ../scss/_modules.scss */
-.text-smaller { font-size: 0.8em; }
+.everytime { position: relative; }
+/* line 77, ../scss/_modules.scss */
+.everytime:before { content: attr(data-before); position: absolute; left: 0em; top: -0.8em; color: #3a3b3b; }
+/* line 84, ../scss/_modules.scss */
+.everytime:after { content: attr(data-after); position: absolute; left: 0em; top: 1.3em; color: #3a3b3b; }
 
-/* line 79, ../scss/_modules.scss */
-.text-bigger { font-size: 1.35em; }
-
-/* line 83, ../scss/_modules.scss */
-.text-light { font-family: "brandon_t", Helvetica, Arial, sans-serif; }
-
-/* line 86, ../scss/_modules.scss */
-.text-bold { font-family: "brandon_b", Helvetica, Arial, sans-serif; }
-
-/* line 91, ../scss/_modules.scss */
-.text-uppercase { text-transform: uppercase; }
+/* line 93, ../scss/_modules.scss */
+.no-margin { margin: 0; }
 
 /* line 96, ../scss/_modules.scss */
+.no-button { background: none; border: none; padding: 0; }
+
+/* line 101, ../scss/_modules.scss */
+.f-right { float: right; }
+
+/* line 106, ../scss/_modules.scss */
+.text-align-left { text-align: left; }
+
+/* line 110, ../scss/_modules.scss */
+.text-smaller { font-size: 0.8em; }
+
+/* line 113, ../scss/_modules.scss */
+.text-bigger { font-size: 1.35em; }
+
+/* line 116, ../scss/_modules.scss */
+.text-heading1 { font-size: 3em; }
+
+/* line 119, ../scss/_modules.scss */
+.text-heading2 { font-size: 2em; }
+
+/* line 123, ../scss/_modules.scss */
+.line-height1 { line-height: 1em; }
+
+/* line 127, ../scss/_modules.scss */
+.text-light { font-family: "brandon_t", Helvetica, Arial, sans-serif; }
+
+/* line 130, ../scss/_modules.scss */
+.text-bold { font-family: "brandon_b", Helvetica, Arial, sans-serif; }
+
+/* line 135, ../scss/_modules.scss */
+.text-uppercase { text-transform: uppercase; }
+
+/* line 139, ../scss/_modules.scss */
+.text-lighterGray { color: #bbbbbb; }
+
+/* line 143, ../scss/_modules.scss */
 .text-lightGray { color: #5e5e5e; }
 
-/* line 99, ../scss/_modules.scss */
+/* line 146, ../scss/_modules.scss */
 .text-gray { color: #3a3b3b; }
+
+/* line 149, ../scss/_modules.scss */
+.text-darkGray { color: #232323; }

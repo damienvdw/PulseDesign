@@ -5,3 +5,25 @@ a{
     color: white;
     text-decoration: none;
 }
+p{
+    color: $lightGray;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin: 1.25em 0;
+}
+hr{
+    margin: -0.5em 0 0.2em 0;
+    border-color: $lighterGray;
+}
+input, textarea{
+    background: none;
+    border: none;
+    //text-transform: uppercase;
+    color:$lightGray;
+    font-size: 1.35em;
+    width: 100%;
+    outline: none;
+}
+textarea {
+  resize: none;
+}
