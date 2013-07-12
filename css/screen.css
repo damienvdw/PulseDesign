@@ -250,15 +250,15 @@ you can use the generic selector below, but it's slower:
 	LAYOUT
 ================================= */
 /* line 4, ../scss/_layout.scss */
-body { background: url(../img/background-pattern.jpg); color: white; font-size: 0.625em; font-family: "brandon_r", Helvetica, Arial, sans-serif; }
+body { background: url(../img/background-pattern.jpg); color: white; font-size: 0.625em; font-family: "brandon_r", Helvetica, Arial, sans-serif; position: relative; }
 
-/* line 10, ../scss/_layout.scss */
+/* line 11, ../scss/_layout.scss */
 .pageBlock { width: 1028px; margin: 0 auto; position: relative; }
 
-/* line 15, ../scss/_layout.scss */
+/* line 16, ../scss/_layout.scss */
 .logoBlock { text-align: center; padding: 3em 0; }
 
-/* line 19, ../scss/_layout.scss */
+/* line 20, ../scss/_layout.scss */
 .navBorder { margin: 3em 0 3em 0; padding: 1em 0; border: 1px dashed #414042; border-left: none; border-right: none; }
 
 /* line 14, ../scss/_mixins.scss */
@@ -268,15 +268,15 @@ body { background: url(../img/background-pattern.jpg); color: white; font-size: 
 /* line 22, ../scss/_mixins.scss */
 .col-container:after { clear: both; }
 
-/* line 29, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 .col-third { width: 32%; margin-left: 2%; float: left; }
-/* line 33, ../scss/_layout.scss */
+/* line 34, ../scss/_layout.scss */
 .col-third:first-child { margin-left: 0%; }
 
-/* line 37, ../scss/_layout.scss */
+/* line 38, ../scss/_layout.scss */
 .col-bordered { border: 1px solid #5e5e5e; border-top: none; border-bottom: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 43, ../scss/_layout.scss */
+/* line 44, ../scss/_layout.scss */
 .ruler50 { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50%; position: absolute; top: 0; left: 0; height: 100%; border-right: 1px solid red; opacity: 0.2; }
 
 /* =================================
@@ -361,41 +361,51 @@ textarea { resize: none; }
 /* line 101, ../scss/_modules.scss */
 .f-right { float: right; }
 
-/* line 106, ../scss/_modules.scss */
+/* line 109, ../scss/_modules.scss */
+.tooltip { position: absolute; z-index: 9999; color: #fff; font-size: 1em; text-transform: uppercase; padding: 0px 5px; background: #5e5e5e; }
+
+/* line 118, ../scss/_modules.scss */
+.tooltip:before { content: ""; position: absolute; width: 0px; height: 0px; border-style: solid; border-width: 0 0 6px 6px; top: -6px; right: 8px; border-color: transparent transparent #5e5e5e transparent; }
+
+/* IE hack */
+/* line 135, ../scss/_modules.scss */
+* html .tooltip .tipHeader { margin-bottom: -6px; }
+
+/* line 147, ../scss/_modules.scss */
 .text-align-left { text-align: left; }
 
-/* line 110, ../scss/_modules.scss */
+/* line 151, ../scss/_modules.scss */
 .text-smaller { font-size: 0.8em; }
 
-/* line 113, ../scss/_modules.scss */
+/* line 154, ../scss/_modules.scss */
 .text-bigger { font-size: 1.35em; }
 
-/* line 116, ../scss/_modules.scss */
+/* line 157, ../scss/_modules.scss */
 .text-heading1 { font-size: 3em; }
 
-/* line 119, ../scss/_modules.scss */
+/* line 160, ../scss/_modules.scss */
 .text-heading2 { font-size: 2em; }
 
-/* line 123, ../scss/_modules.scss */
+/* line 164, ../scss/_modules.scss */
 .line-height1 { line-height: 1em; }
 
-/* line 127, ../scss/_modules.scss */
+/* line 168, ../scss/_modules.scss */
 .text-light { font-family: "brandon_t", Helvetica, Arial, sans-serif; }
 
-/* line 130, ../scss/_modules.scss */
+/* line 171, ../scss/_modules.scss */
 .text-bold { font-family: "brandon_b", Helvetica, Arial, sans-serif; }
 
-/* line 135, ../scss/_modules.scss */
+/* line 176, ../scss/_modules.scss */
 .text-uppercase { text-transform: uppercase; }
 
-/* line 139, ../scss/_modules.scss */
+/* line 180, ../scss/_modules.scss */
 .text-lighterGray { color: #bbbbbb; }
 
-/* line 143, ../scss/_modules.scss */
+/* line 184, ../scss/_modules.scss */
 .text-lightGray { color: #5e5e5e; }
 
-/* line 146, ../scss/_modules.scss */
+/* line 187, ../scss/_modules.scss */
 .text-gray { color: #3a3b3b; }
 
-/* line 149, ../scss/_modules.scss */
+/* line 190, ../scss/_modules.scss */
 .text-darkGray { color: #232323; }
