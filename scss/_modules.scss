@@ -71,6 +71,9 @@
     position: relative;
     top:-3em;
 }
+.losangeImg{
+    width: 22em;
+}
 
 .everytime{
     position: relative;
@@ -88,6 +91,34 @@
         top: 1.3em;
         color: $gray;
     }   
+}
+.separateur-line{
+    @include boxSizingBorderBox;
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+    border-right: 1px solid white;
+}
+.height-small{
+    height:2em;
+}
+.height-big{
+    height:3em;
+}
+.has-losange{
+    background: url(../img/losange-contour.svg) no-repeat 50% 50%;
+    padding: 2em 0em 2em 0em;
+    width: 5em;
+    display: inline-block;
+    margin-top: 1em;
+}
+.small-losange{
+    font-size: 0.5em;
+    margin: 0 1em;
+    top: -4.5em;
+    position: relative;
 }
 
 .no-margin{
@@ -160,6 +191,9 @@
 .text-heading2{
     font-size: 2em;
 }
+.text-heading3{
+    font-size: 1.8em;
+}
 
 .line-height1{
     line-height:1em; 
@@ -189,4 +223,7 @@
 }
 .text-darkGray{
     color:$darkGray;
+}
+.text-white{
+    color:white;
 }
