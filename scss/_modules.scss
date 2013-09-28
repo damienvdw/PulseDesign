@@ -30,7 +30,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 1em;
+    right: 3.5em;
     top:1.8em;
 }
 .socialNav--item{
@@ -72,7 +72,7 @@
     top:-3em;
 }
 .losangeImg{
-    width: 22em;
+    width: 18.7em;
 }
 
 .everytime{
@@ -102,7 +102,7 @@
     border-right: 1px solid white;
 }
 .height-small{
-    height:2em;
+    height:1.5em;
 }
 .height-big{
     height:3em;
@@ -123,6 +123,13 @@
 
 .no-margin{
     margin: 0;
+}
+.spacing{
+    padding-top: 7em;
+    display: block;
+}
+.spacingSmall{
+    padding-top: 0.5em;
 }
 .no-button{
     background: none;
@@ -226,4 +233,22 @@
 }
 .text-white{
     color:white;
+}
+
+// CASES
+.casesImg img{
+    width: 100%;    
+    height: auto;
+    line-height: 0px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#qLoverlay{
+    opacity: 0.8;
+}
+#qLbar{}
+#qLpercentage{
+    //text-indent: -999em;
+    //background: url(../img/losange-contour.svg) top;
 }

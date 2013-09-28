@@ -253,13 +253,19 @@ you can use the generic selector below, but it's slower:
 body { background: url(../img/background-pattern.jpg); color: white; font-size: 0.625em; font-family: "brandon_r", Helvetica, Arial, sans-serif; position: relative; }
 
 /* line 11, ../scss/_layout.scss */
-.pageBlock { width: 1028px; margin: 0 auto; position: relative; }
+.pageBlockContent { width: 90%; min-width: 800px; margin: 0 auto; position: relative; padding-left: 2.5%; padding-right: 2.5%; }
 
-/* line 16, ../scss/_layout.scss */
-.logoBlock { text-align: center; padding: 3em 0; }
+/* line 19, ../scss/_layout.scss */
+.aboveAll { z-index: 999999; }
 
-/* line 20, ../scss/_layout.scss */
-.navBorder { margin: 3em 0 3em 0; padding: 1em 0; border: 1px dashed #414042; border-left: none; border-right: none; }
+/* line 22, ../scss/_layout.scss */
+.logoBlock { text-align: center; padding-top: 3em; padding-bottom: 3em; }
+
+/* line 27, ../scss/_layout.scss */
+.pageBlock { width: 100%; min-width: 800px; margin: 0 auto; position: relative; padding-left: 10px; padding-right: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 36, ../scss/_layout.scss */
+.navBorder { margin: 0.2em 0 1em 0; padding: 1em 0; border: 1px dashed #414042; border-left: none; border-right: none; }
 
 /* line 14, ../scss/_mixins.scss */
 .col-container { *zoom: 1; }
@@ -268,15 +274,15 @@ body { background: url(../img/background-pattern.jpg); color: white; font-size: 
 /* line 22, ../scss/_mixins.scss */
 .col-container:after { clear: both; }
 
-/* line 30, ../scss/_layout.scss */
+/* line 46, ../scss/_layout.scss */
 .col-third { width: 32%; margin-left: 2%; float: left; }
-/* line 34, ../scss/_layout.scss */
+/* line 50, ../scss/_layout.scss */
 .col-third:first-child { margin-left: 0%; }
 
-/* line 38, ../scss/_layout.scss */
+/* line 54, ../scss/_layout.scss */
 .col-bordered { border: 1px solid #5e5e5e; border-top: none; border-bottom: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 44, ../scss/_layout.scss */
+/* line 60, ../scss/_layout.scss */
 .ruler50 { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50%; position: absolute; top: 0; left: 0; height: 100%; border-right: 1px solid red; opacity: 0.2; }
 
 /* =================================
@@ -314,7 +320,7 @@ textarea { resize: none; }
 .mainNav--link:hover, .mainNav--link:active, .mainNav--link.active { background: url(../img/mainNav-pattern.png); }
 
 /* line 29, ../scss/_modules.scss */
-.socialNav { margin: 0; padding: 0; position: absolute; right: 1em; top: 1.8em; }
+.socialNav { margin: 0; padding: 0; position: absolute; right: 3.5em; top: 1.8em; }
 
 /* line 36, ../scss/_modules.scss */
 .socialNav--item { display: inline-block; font-size: 1em; padding: 0 1.05em; border-left: 1px dashed #414042; }
@@ -346,7 +352,7 @@ textarea { resize: none; }
 .logoFollow { position: relative; top: -3em; }
 
 /* line 74, ../scss/_modules.scss */
-.losangeImg { width: 22em; }
+.losangeImg { width: 18.7em; }
 
 /* line 78, ../scss/_modules.scss */
 .everytime { position: relative; }
@@ -359,7 +365,7 @@ textarea { resize: none; }
 .separateur-line { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 50%; position: relative; top: 0; left: 0; margin: 1em 0; border-right: 1px solid white; }
 
 /* line 104, ../scss/_modules.scss */
-.height-small { height: 2em; }
+.height-small { height: 1.5em; }
 
 /* line 107, ../scss/_modules.scss */
 .height-big { height: 3em; }
@@ -374,62 +380,135 @@ textarea { resize: none; }
 .no-margin { margin: 0; }
 
 /* line 127, ../scss/_modules.scss */
+.spacing { padding-top: 7em; display: block; }
+
+/* line 131, ../scss/_modules.scss */
+.spacingSmall { padding-top: 0.5em; }
+
+/* line 134, ../scss/_modules.scss */
 .no-button { background: none; border: none; padding: 0; }
 
-/* line 132, ../scss/_modules.scss */
+/* line 139, ../scss/_modules.scss */
 .f-right { float: right; }
 
-/* line 140, ../scss/_modules.scss */
+/* line 147, ../scss/_modules.scss */
 .tooltip { position: absolute; z-index: 9999; color: #fff; font-size: 1em; text-transform: uppercase; padding: 0px 5px; background: #5e5e5e; }
 
-/* line 149, ../scss/_modules.scss */
+/* line 156, ../scss/_modules.scss */
 .tooltip:before { content: ""; position: absolute; width: 0px; height: 0px; border-style: solid; border-width: 0 0 6px 6px; top: -6px; right: 8px; border-color: transparent transparent #5e5e5e transparent; }
 
 /* IE hack */
-/* line 166, ../scss/_modules.scss */
+/* line 173, ../scss/_modules.scss */
 * html .tooltip .tipHeader { margin-bottom: -6px; }
 
-/* line 178, ../scss/_modules.scss */
+/* line 185, ../scss/_modules.scss */
 .text-align-left { text-align: left; }
 
-/* line 182, ../scss/_modules.scss */
+/* line 189, ../scss/_modules.scss */
 .text-smaller { font-size: 0.8em; }
 
-/* line 185, ../scss/_modules.scss */
+/* line 192, ../scss/_modules.scss */
 .text-bigger { font-size: 1.35em; }
 
-/* line 188, ../scss/_modules.scss */
+/* line 195, ../scss/_modules.scss */
 .text-heading1 { font-size: 3em; }
 
-/* line 191, ../scss/_modules.scss */
+/* line 198, ../scss/_modules.scss */
 .text-heading2 { font-size: 2em; }
 
-/* line 194, ../scss/_modules.scss */
+/* line 201, ../scss/_modules.scss */
 .text-heading3 { font-size: 1.8em; }
 
-/* line 198, ../scss/_modules.scss */
+/* line 205, ../scss/_modules.scss */
 .line-height1 { line-height: 1em; }
 
-/* line 202, ../scss/_modules.scss */
+/* line 209, ../scss/_modules.scss */
 .text-light { font-family: "brandon_t", Helvetica, Arial, sans-serif; }
 
-/* line 205, ../scss/_modules.scss */
+/* line 212, ../scss/_modules.scss */
 .text-bold { font-family: "brandon_b", Helvetica, Arial, sans-serif; }
 
-/* line 210, ../scss/_modules.scss */
+/* line 217, ../scss/_modules.scss */
 .text-uppercase { text-transform: uppercase; }
 
-/* line 214, ../scss/_modules.scss */
+/* line 221, ../scss/_modules.scss */
 .text-lighterGray { color: #bbbbbb; }
 
-/* line 218, ../scss/_modules.scss */
+/* line 225, ../scss/_modules.scss */
 .text-lightGray { color: #5e5e5e; }
 
-/* line 221, ../scss/_modules.scss */
+/* line 228, ../scss/_modules.scss */
 .text-gray { color: #3a3b3b; }
 
-/* line 224, ../scss/_modules.scss */
+/* line 231, ../scss/_modules.scss */
 .text-darkGray { color: #232323; }
 
-/* line 227, ../scss/_modules.scss */
+/* line 234, ../scss/_modules.scss */
 .text-white { color: white; }
+
+/* line 239, ../scss/_modules.scss */
+.casesImg img { width: 100%; height: auto; line-height: 0px; display: block; margin: 0; padding: 0; }
+
+/* line 247, ../scss/_modules.scss */
+#qLoverlay { opacity: 0.8; }
+
+/* Lean Slider v1.0 http://dev7studios.com/lean-slider  Copyright 2012, Dev7studios Free to use and abuse under the MIT license. http://www.opensource.org/licenses/mit-license.php */
+/* line 10, ../scss/_lean-slider.scss */
+.lean-slider { position: relative; *zoom: 1; }
+
+/* line 15, ../scss/_lean-slider.scss */
+.lean-slider:before, .lean-slider:after { content: " "; display: table; }
+
+/* line 19, ../scss/_lean-slider.scss */
+.lean-slider:after { clear: both; }
+
+/* line 23, ../scss/_lean-slider.scss */
+.lean-slider-slide { float: left; width: 100%; margin-right: -100%; display: none; }
+
+/* line 29, ../scss/_lean-slider.scss */
+.lean-slider-slide.current { display: block; }
+
+/* line 32, ../scss/_lean-slider.scss */
+.lean-slider-slide { display: block; position: relative; opacity: 0; -webkit-transition: opacity 0.6s linear; -moz-transition: opacity 0.6s linear; -ms-transition: opacity 0.6s linear; -o-transition: opacity 0.6s linear; transition: opacity 0.6s linear; }
+
+/* line 42, ../scss/_lean-slider.scss */
+.lean-slider-slide.current { opacity: 1; }
+
+/* line 43, ../scss/_lean-slider.scss */
+.lean-slider-slide img { display: block; width: 100%; }
+
+/* line 48, ../scss/_lean-slider.scss */
+.pagination { padding-top: 15px; }
+
+/* line 52, ../scss/_lean-slider.scss */
+.casestudy { position: absolute; top: 60%; left: 50%; margin-left: -100px; background-color: #171717; padding: 3px 10px 1px; }
+
+/* line 61, ../scss/_lean-slider.scss */
+.slider-wrapper { position: relative; max-height: 575px; overflow: hidden; }
+
+/* line 66, ../scss/_lean-slider.scss */
+.slider-direction-nav { position: absolute; top: 50%; width: 100%; }
+
+/* line 71, ../scss/_lean-slider.scss */
+.lean-slider-prev, .lean-slider-next { height: 24px; top: -21px; padding: 9px 15px; width: 12px; display: block; background-color: #171717; position: absolute; }
+
+/* line 80, ../scss/_lean-slider.scss */
+.lean-slider-prev { left: 20px; }
+
+/* line 83, ../scss/_lean-slider.scss */
+.lean-slider-next { right: 20px; }
+
+/* line 87, ../scss/_lean-slider.scss */
+.pagination-item { width: 12.5%; height: 45px; display: inline-block; position: relative; background: url(../img/checker-pattern.gif); }
+/* line 94, ../scss/_lean-slider.scss */
+.pagination-item:hover .pagination-text { color: white; }
+/* line 99, ../scss/_lean-slider.scss */
+.pagination-item:first-child .pagination-slider { border-left: none; }
+
+/* line 104, ../scss/_lean-slider.scss */
+.pagination-slider { width: 100%; height: 100%; background-color: white; display: block; background: url(../img/checker-pattern-white.gif); border-left: 1px dotted #bbbbbb; }
+
+/* line 112, ../scss/_lean-slider.scss */
+.pagination-text { position: absolute; top: 8px; width: 100%; color: #414042; text-align: center; background: url(../img/background-pattern.jpg); text-transform: uppercase; padding: 3px 0px 1px 0px; }
+/* line 121, ../scss/_lean-slider.scss */
+.pagination-text.active { color: white; }
